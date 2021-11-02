@@ -22,7 +22,7 @@ export default async () => {
     // llamo a la funcion y la almaceno en una const
     const posts = await getPost();
 
-    // Obtengo el total de post
+    // Obtengo el total de post y lo pinto en mi html
     console.log(posts.length)
     totalElement.innerHTML = posts.length
 
