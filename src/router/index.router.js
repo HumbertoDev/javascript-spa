@@ -15,9 +15,12 @@ const router = async (route) => {
     // usamos switch para evaluar las condiciones
     switch(route){
         //Devuelve la view de home.js 
-        case '#/': {
+        case '': {
             // utilizamos appendChild() para agregar nuestro divElement a content.
             return content.appendChild(pages.home());
+        }
+        case '#/' : {
+            return content.appendChild(pages.home())
         }
         //Devuelve la view de beneficios.js
         case '#/beneficios':{
